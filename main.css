@@ -19,3 +19,43 @@
   --sec-font: "K2D", sans-serif;
 }
 
+.custom-gradient-1 {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent 72deg,
+    var(--c-theme-light) 72deg,
+    var(--c-theme-light) 360deg
+  );
+}
+.custom-gradient-2 {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent 72deg,
+    var(--c-theme-light) 72deg,
+    var(--c-theme-light) 360deg
+  );
+}
+.custom-gradient-3 {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent 72deg,
+    var(--c-theme-light) 72deg,
+    var(--c-theme-light) 360deg
+  );
+}
+.custom-gradient-4 {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent 72deg,
+    var(--c-theme-light) 72deg,
+    var(--c-theme-light) 360deg
+  );
+}
+.custom-gradient-5 {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent 72deg,
+    var(--c-theme-light) 72deg,
+    var(--c-theme-light) 360deg
+  );
+}

@@ -31,23 +31,29 @@
       <div
         class="container max-w-7xl mx-auto flex justify-between items-center gap-10 py-4 px-8"
       >
-        <div
+      <input type="checkbox" id="burger_check">
+          <label class="burger" for="burger_check">
+            <div class="line top"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
+          </label>
+        <a
           class="bg-linear-to-r from-[var(--c-theme-light)] to-[var(--c-theme-accent)] bg-clip-text text-transparent font-[K2D] text-3xl font-bold uppercase tracking-wide"
         >
           Logo
-        </div>
-        <nav class="">
-          <ul
-            class="flex justify-center items-center text-xl text-[var(--c-grey-9)] font-medium tracking-wide gap-15 whitespace-nowrap"
+        </a>
+        <nav class="header_nav">
+          <menu
+            class="header_navlist flex justify-center items-center text-xl text-[var(--c-grey-9)] font-medium tracking-wide gap-15 whitespace-nowrap"
           >
-            <li class="text-[var(--c-theme-light)]">
+            <li class="header_link header_active text-[var(--c-theme-light)]">
               <a href="" class="">Home</a>
             </li>
-            <li class=""><a href="" class="">Service</a></li>
-            <li class=""><a href="" class="">About me</a></li>
-            <li class=""><a href="" class="">Portfolio</a></li>
-            <li class=""><a href="" class="">Contact me</a></li>
-          </ul>
+            <li class="header_link"><a href="" class="">Service</a></li>
+            <li class="header_link"><a href="" class="">About me</a></li>
+            <li class="header_link"><a href="" class="">Portfolio</a></li>
+            <li class="header_link"><a href="" class="">Contact me</a></li>
+          </menu>
         </nav>
         <button
           class="bg-[var(--c-theme-light)] text-white font-bold text-base tracking-wide whitespace-nowrap px-10 py-3 rounded-lg"
@@ -431,20 +437,133 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
+      <section class="py-25">
+        <div class="container flex gap-25 flex-col justify-center items-center max-w-7xl mx-auto">
           <h2 class="text-5xl text-white font-bold tracking-wide">
             Portfolio
           </h2>
-          <div class="">
-            <div class="">
-              <div class=""><img src="" alt=""></div>
-              <div class=""><span></span><span></span></div>
+          <div class="grid grid-cols-3 gap-6">
+            <div class="rounded-2xl overflow-hidden">
+              <div class="aspect-[3/4]">
+                <img class="w-full h-full object-cover object-center" src="./assets/img/portfolio.png" alt="">
+              </div>
+              <div class="text-base font-bold bg-white/8 flex justify-between items-center p-4">
+                <span class="text-[var(--c-grey-d)]">Project name</span>
+                <span class="text-[var(--c-grey-9)]">Categories</span>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden">
+              <div class="aspect-[3/4]">
+                <img class="w-full h-full object-cover object-center" src="./assets/img/portfolio.png" alt="">
+              </div>
+              <div class="text-base font-bold bg-white/8 flex justify-between items-center p-4">
+                <span class="text-[var(--c-grey-d)]">Project name</span>
+                <span class="text-[var(--c-grey-9)]">Categories</span>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden">
+              <div class="aspect-[3/4]">
+                <img class="w-full h-full object-cover object-center" src="./assets/img/portfolio.png" alt="">
+              </div>
+              <div class="text-base font-bold bg-white/8 flex justify-between items-center p-4">
+                <span class="text-[var(--c-grey-d)]">Project name</span>
+                <span class="text-[var(--c-grey-9)]">Categories</span>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden">
+              <div class="aspect-[3/4]">
+                <img class="w-full h-full object-cover object-center" src="./assets/img/portfolio.png" alt="">
+              </div>
+              <div class="text-base font-bold bg-white/8 flex justify-between items-center p-4">
+                <span class="text-[var(--c-grey-d)]">Project name</span>
+                <span class="text-[var(--c-grey-9)]">Categories</span>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden">
+              <div class="aspect-[3/4]">
+                <img class="w-full h-full object-cover object-center" src="./assets/img/portfolio.png" alt="">
+              </div>
+              <div class="text-base font-bold bg-white/8 flex justify-between items-center p-4">
+                <span class="text-[var(--c-grey-d)]">Project name</span>
+                <span class="text-[var(--c-grey-9)]">Categories</span>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden">
+              <div class="aspect-[3/4]">
+                <img class="w-full h-full object-cover object-center" src="./assets/img/portfolio.png" alt="">
+              </div>
+              <div class="text-base font-bold bg-white/8 flex justify-between items-center p-4">
+                <span class="text-[var(--c-grey-d)]">Project name</span>
+                <span class="text-[var(--c-grey-9)]">Categories</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="py-20">
+        <div class="container max-w-7xl mx-auto flex flex-col justify-center items-center gap-10">
+          <h2 class="text-5xl text-white font-bold tracking-wide text-center">Contact me</h2>
+          <p class="max-w-xl text-xl text-center text-[var(--c-grey-7)] leading-[1.5]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus suscipit fugiat aut cum harum!</p>
+          <form class="grid gap-6 grid-cols-2 grid-rows-[1fr_1fr_3fr_1fr]"" >
+              <input type="text" placeholder="Name" class="text-base  text-[var(--c-grey-9)] bg-white/4 py-4 px-6 rounded-lg">
+              <input type="text" placeholder="Email" class="text-base  text-[var(--c-grey-9)] bg-white/4 py-4 px-6 rounded-lg">
+              <input type="text" placeholder="Phone" class="text-base  text-[var(--c-grey-9)] bg-white/4 py-4 px-6 rounded-lg">
+              <input type="text" placeholder="Project" class="text-base  text-[var(--c-grey-9)] bg-white/4 py-4 px-6 rounded-lg">
+              <textarea placeholder="Description..." class="text-base col-span-2 text-[var(--c-grey-9)] bg-white/4 py-4 px-6 rounded-lg resize-none"></textarea>
+              <button class="cursor-pointer bg-[var(--c-theme-light)] hover:bg-[var(--c-theme-dark)] border-2 border-[var(--c-theme-light)] hover:border-[var(--c-theme-dark)] transition text-white font-bold text-base tracking-wide whitespace-nowrap px-10 py-3 rounded-lg justify-self-center col-span-2">Contact</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="bg-white/4 py-10">
+      <div class="container max-w-7xl mx-auto flex flex-col items-center justify-center gap-8">
+        <a
+          class="bg-linear-to-r from-[var(--c-theme-light)] to-[var(--c-theme-accent)] bg-clip-text text-transparent font-[K2D] text-3xl font-bold uppercase tracking-wide"
+        >
+          Logo
+        </a>
+        <nav class="">
+          <ul
+            class="flex justify-center items-center text-xl text-[var(--c-grey-9)] font-medium tracking-wide gap-15 whitespace-nowrap"
+          >
+            <li class=""><a href="" class="">Home</a></li>
+            <li class=""><a href="" class="">Service</a></li>
+            <li class=""><a href="" class="">About me</a></li>
+            <li class=""><a href="" class="">Portfolio</a></li>
+            <li class=""><a href="" class="">Contact me</a></li>
+          </ul>
+        </nav>
+        <div class="inline-flex gap-4">
+          <a
+            class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-grey-b)] flex justify-center items-center text-xl"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-grey-b)] flex justify-center items-center text-xl"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-grey-b)] flex justify-center items-center text-xl"
+            ><i class="fa-brands fa-dribbble"></i
+          ></a>
+          <a
+            class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-grey-b)] flex justify-center items-center text-xl"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+        </div>
+        <div class="text-[var(--c-grey-9)] flex gap-8 *:flex *:gap-4 *:items-center">
+          <div class="">
+            <i class="fa-regular fa-envelope"></i>
+            <span class="">mkhitar.siradeghyan@yandex.ru</span>
+          </div>
+          <div class="">
+            <i class="fa-solid fa-phone"></i>
+            <span class="">+374-99-12-34-56</span>
+          </div>
+        </div>
+        
+        <p class="text-[var(--c-grey-7)] border-t border-[var(--c-grey-7)] pt-8">Designed by Mkhitar Siradeghyan Fullstack Web Developer</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -67,7 +67,7 @@
         <div
           class="container px-8 lg:h-full max-w-7xl mx-auto flex justify-between flex-col lg:flex-row items-center"
         >
-          <div class="flex flex-col gap-8 justify-center items-start">
+          <div class="flex flex-col gap-4 sm:gap-8 justify-center items-center text-center lg:text-left lg:items-start">
             <h3
               class="text-[var(--c-grey-7)] text-base lg:text-2xl font-semibold tracking-wide"
             >
@@ -99,7 +99,7 @@
                 ><i class="fa-brands fa-behance"></i
               ></a>
             </div>
-            <div class="inline-flex gap-4">
+            <div class="inline-flex gap-4 flex-col sm:flex-row">
               <button
                 class="cursor-pointer bg-[var(--c-theme-light)] border-2 border-[var(--c-theme-light)] text-white font-bold text-base tracking-wide whitespace-nowrap px-10 py-3 rounded-lg"
               >
@@ -111,29 +111,20 @@
                 Download CV
               </button>
             </div>
-            <div class="bg-white/4 inline-flex py-6 rounded-lg">
-              <div class="flex flex-col gap-3 px-8">
-                <span
-                  class="text-[var(--c-theme-light)] font-extrabold tracking-wide text-2xl"
-                  >5+</span
-                >
-                <span
-                  class="text-xl text-[var(--c-grey-d)] font-bold tracking-wide"
-                  >Experiences</span
-                >
-              </div>
-              <div
-                class="flex flex-col gap-3 px-8 border-x border-x-[var(--c-grey-9)]"
-              >
-                <span
-                  class="text-[var(--c-theme-light)] font-extrabold tracking-wide text-2xl"
-                  >20+</span
-                >
-                <span
-                  class="text-xl text-[var(--c-grey-d)] font-bold tracking-wide"
-                  >Project done</span
-                >
-              </div>
+            <div class="bg-white/4 inline-grid grid-cols-3 divide-x-2 py-6 *:px-8 *:text-neutral-400 *:flex *:flex-col *:items-start *:justify-start *:gap-2 *:text-xl rounded-lg">
+                <div class="">
+                    <span class="text-[var(--c-theme-light)] text-2xl font-extrabold tracking-wide">5+</span>
+                    <span>Experiences</span>
+                </div>
+                <div class="">
+                    <span class="text-[var(--c-theme-light)] text-2xl font-extrabold tracking-wide">20+</span>
+                    <span>Project Done</span>
+                </div>
+                <div class="">
+                    <span class="text-[var(--c-theme-light)] text-2xl font-extrabold tracking-wide">80+</span>
+                    <span>Happy Clients</span>
+                </div>
+            </div>
               <div class="flex flex-col gap-3 px-8">
                 <span
                   class="text-[var(--c-theme-light)] font-extrabold tracking-wide text-2xl"
